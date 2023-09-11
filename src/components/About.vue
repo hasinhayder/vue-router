@@ -2,6 +2,6 @@
 </script>
 
 <template>
-    This is the contact page
+    This is the about page
 </template>    
 <style></style>

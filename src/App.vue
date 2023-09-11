@@ -10,9 +10,23 @@ import HelloWorld from './components/HelloWorld.vue'
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
+    <ul>
+      <li>
+        <router-link to="/">Home</router-link>
+      </li>
+      <li>
+        <router-link to="/about">About</router-link>
+      </li>
+      <li>
+        <router-link to="/contact">Contact</router-link>
+      </li>
+      <li>
+        <router-link to="/post/1">Post 1</router-link>
+      </li>
+    </ul>
   </div>
   <!-- <RouterView/> -->
-  <router-view/>
+  <router-view />
 </template>
 
 <style scoped>
@@ -22,9 +36,11 @@ import HelloWorld from './components/HelloWorld.vue'
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
 }
