@@ -21,12 +21,15 @@ import HelloWorld from './components/HelloWorld.vue'
         <router-link to="/contact">Contact</router-link>
       </li>
       <li>
-        <router-link to="/post/1">Post 1</router-link>
+        <router-link :to="{name:'post',params:{id:1}}">Post 1</router-link>
+      </li>
+      <li>
+        <router-link :to="{name:'post',params:{id:2}}">Post 2</router-link>
       </li>
     </ul>
   </div>
   <!-- <RouterView/> -->
-  <router-view />
+  <router-view :key="$route.fullPath"  />
 </template>
 
 <style scoped>
